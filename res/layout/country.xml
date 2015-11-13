@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollViewC"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/lC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/ivBG"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scaleType="centerCrop" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right" >
+		
+		        <TextView
+		            android:id="@+id/textDESC"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginLeft="16dp"
+		            android:layout_marginRight="16dp"
+		            android:layout_marginTop="16dp"
+		            android:layout_weight="1"
+		            android:textColor="#000" />
+		
+		        <TextView
+		            android:id="@+id/textDATE"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_margin="16dp"
+		            android:textColor="#8A8A8A" />
+
+		    </LinearLayout>
+		    
+            <Button
+                android:id="@+id/btnSEEMORE"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/button"
+                android:minHeight="55dp"
+                android:text="SEE MORE"
+                android:textColor="#FFF" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
